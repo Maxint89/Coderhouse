@@ -32,7 +32,9 @@ h1{
 }
 
 .discos{
-    background-image: url(../img/Maidenbg.jpg);
+    background-image: url(../img/prueba.jpg);
+    background-size: 200px;
+    background-repeat: repeat;
 }
 
 .contacto{
@@ -101,20 +103,37 @@ h1{
 }
 
 .albums{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-areas: 
+        "album-1    album-2    album-3"
+        "album-4    album-5    album-6"
+        "album-7    album-8    album-9"
+        "album-10   album-11   album-12"
+        "album-13   album-14   album-15"
+        "album-16   album-17";
+    justify-items: stretch;
+    align-items: stretch;
+
+    /*flex-wrap: wrap;
+    justify-content: space-around;*/
 }
 
 .caratula{
-    width: calc(33.33% - 20px);
+    /*width: calc(33.33% - 20px);
     margin: 20px 0;
-    text-align: center;
+    text-align: center;*/
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
 }
 
 .caratula img{
     max-width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
@@ -135,6 +154,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-bottom: 0;
+    display: flex;
 }
 
 .titlefoot{
