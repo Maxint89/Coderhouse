@@ -29,6 +29,8 @@ h1{
 
 .recitales{
     background-image: url(../img/imageconcert.jpg);
+    background-size: 600px;
+    background-repeat: repeat;
 }
 
 .discos{
@@ -94,8 +96,9 @@ h1{
     margin-bottom: 2.5rem;
 }
 
-.historiaBanda{
+.historiaBanda, .titulo-concierto{
     font-size: 24px;
+    color: #cb3d3d;
 }
 
 .miembros{
@@ -103,21 +106,91 @@ h1{
 }
 
 .albums{
-    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-areas: 
         "album-1    album-2    album-3"
         "album-4    album-5    album-6"
         "album-7    album-8    album-9"
         "album-10   album-11   album-12"
         "album-13   album-14   album-15"
-        "album-16   album-17";
-    justify-items: stretch;
+        "album-16   album-17   .";
+    
+    
+   
+        /*justify-items: stretch;
     align-items: stretch;
 
-    /*flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;*/
+}
+
+.album-1{
+    grid-area: album-1;
+}
+
+.album-2{
+    grid-area: album-2;
+}
+
+.album-3{
+    grid-area: album-3;
+}
+
+.album-4{
+    grid-area: album-4;
+}
+
+.album-5{
+    grid-area: album-5;
+}
+
+.album-6{
+    grid-area: album-6;
+}
+
+.album-7{
+    grid-area: album-7;
+}
+
+.album-8{
+    grid-area: album-8;
+}
+
+.album-9{
+    grid-area: album-9;
+}
+
+.album-10{
+    grid-area: album-10;
+}
+
+.album-11{
+    grid-area: album-11;
+}
+
+.album-12{
+    grid-area: album-12;
+}
+
+.album-13{
+    grid-area: album-13;
+}
+
+.album-14{
+    grid-area: album-14;
+}
+
+.album-15{
+    grid-area: album-15;
+}
+
+.album-16{
+    grid-area: album-16;
+}
+
+.album-17{
+    grid-area: album-17;
 }
 
 .caratula{
@@ -137,6 +210,36 @@ h1{
     border-radius: 8px;
 }
 
+.tour{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.titulo-concierto{
+    background-color: #00000fc9;
+}
+
+table {
+    background-color: #00000fc9;
+    color:#cb3d3d;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
 label, .campo-form p{
     color: #cb3d3d;
     font-size: 1.25rem;
@@ -154,12 +257,12 @@ footer {
     text-align: center;
     padding: 20px;
     margin-bottom: 0;
-    display: flex;
+    display: block;
 }
 
 .titlefoot{
     color: #cb3d3d;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .redes-sociales a {
